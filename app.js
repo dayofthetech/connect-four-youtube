@@ -1,3 +1,4 @@
+//by using the DOMContent, all the js code will be inside the curly brackets
 document.addEventListener('DOMContentLoaded', () => {
   const squares = document.querySelectorAll('.grid div')
   const result = document.querySelector('#result')
@@ -119,11 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
           squares[i].classList.add('taken')
           squares[i].classList.add('player-two')
           currentPlayer = 1
-          displayCurrentPlayer.innerHTML = currentPlayer        
-        } 
+          displayCurrentPlayer.innerHTML = currentPlayer
+        }
       } else alert('cant go here')
       checkBoard()
     }
   }
-  
+
 })
